@@ -56,12 +56,13 @@ namespace _03_Simon_Says
             Assert.AreEqual("hello hello hello", simon.Repeat("hello", 3));
         }
 
-        [TestMethod]
+     /*   [TestMethod]
         public void ShouldRepeatANumberOfTimes()
         {
             Simon simon = new Simon();
             Assert.AreEqual("hello hello hello", simon.Repeat("hello", 3));
-        }
+        }*/
+
         [TestMethod]
         public void ReturnsFirstLetterOfWord()
         {
@@ -113,7 +114,7 @@ namespace _03_Simon_Says
             Simon simon = new Simon();
             Assert.AreEqual("War and Peace", simon.Titleize("war and peace"));
         }
-        [TestMethod]
+       [TestMethod]
         public void CapitilizeLittleWordsInBeginningOfSentence()
         {
             Simon simon = new Simon();
