@@ -2,9 +2,9 @@
 
 namespace _03_Simon_Says
 {
-    internal class Simon
+    public class Simon
     {
-        internal string Echo(string v)
+        public string Echo(string v)
         {
             string res = "";
             switch(v)
@@ -17,17 +17,17 @@ namespace _03_Simon_Says
             return res;
         }
 
-        internal string Shout(string v)
+        public string Shout(string v)
         {
             return v.ToUpper();
         }
 
-        internal string Repeat(string v)
+        public string Repeat(string v)
         {
             return v + " " + v;
         }
 
-        internal string Repeat(string v1, int v2)
+        public string Repeat(string v1, int v2)
         {
             string collect = v1;
             for(int i = 0;i<v2-1;i++)
@@ -37,7 +37,7 @@ namespace _03_Simon_Says
             return collect;
         }
 
-        internal string StartOfWord(string v1, int v2)
+        public string StartOfWord(string v1, int v2)
         {
             string result = "";
 
@@ -46,14 +46,14 @@ namespace _03_Simon_Says
             return result;
         }
 
-        internal string FirstWord(string v)
+        public string FirstWord(string v)
         {
             
 
             return v.Substring(0,v.IndexOf(' '));
         }
 
-        internal string Titleize(string v)
+        public string Titleize(string v)
         {
             string[] littleWords = { "and", "or", "about", "the", "over" };
             string[] words;
